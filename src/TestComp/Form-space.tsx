@@ -96,7 +96,7 @@ const FormSpace: React.FC = () => {
     </Form.Item>
   );
 
-  const suffixSelector = (
+  const currencySelector = (
     <Form.Item name="suffix" noStyle>
       <Select style={{ width: 70 }}>
         <Option value="THB">฿</Option>
@@ -168,7 +168,7 @@ const FormSpace: React.FC = () => {
         label="Expect salary"
         rules={[{ required: true, message: "Please input donation amount!" }]}
       >
-        <InputNumber addonAfter={suffixSelector} style={{ width: "100%" }} />
+        <InputNumber addonAfter={currencySelector} style={{ width: "100%" }} />
       </Form.Item>
 
       <Form.Item

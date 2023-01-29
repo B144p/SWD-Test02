@@ -5,6 +5,7 @@ import FormSpace from './TestComp/Form-space'
 import './style/App.css'
 import TestGrid from './TestComp/TestGrid'
 import RegisterPage from './TestComp/GPT'
+import TableComp from './TestComp/TableComp'
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
 
       <section className='container-section'>
         {localStorage.getItem('formData1')}
-
+        <TableComp />
       </section>
 
     </Space>
